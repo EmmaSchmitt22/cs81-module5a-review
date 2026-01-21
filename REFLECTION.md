@@ -1,1 +1,4 @@
+This code example was very helpful in understanding the ways in which higher-order functions can be nested to simplify code. Commenting on each line helped me to parse out what was happening at each step. I still find it a bit difficult to read lines like "return [...new Set(names)];" since I'm not familiar enough with the syntax to fully break it down. But I've gotten the general idea and think that more practice will help.
 
+I was most surprised when I provided a test call for the countMood function, and gave the model "happy", which does not exist in the dataset. I expected the 
+code to run and print "0", but instead, there was nothing printed. Through that unexpected outcome, I realized that I had made a small error and misplaced a comma (which threw everything off)! I was able to resolve it, and the function correctly returned "0".
