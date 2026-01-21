@@ -1,4 +1,5 @@
 //Emma Schmitt
+//Repo URL: https://github.com/EmmaSchmitt22/cs81-module5a-review
 
 const hobbyLog = [
     { day: "Monday", hobby: "drawing", minutes: 30, mood: "focused" },
@@ -22,7 +23,7 @@ function uniqueHobbies(log) { //Function for listing each unique hobby (with no 
 
 function longSessions(log, minMinutes) { //Takes in the log and a value for your set "minMinutes" to measure against
     return log.filter(entry => entry.minutes > minMinutes); //filters the minutes data and returns any session where the  user's
-    //minutes were greater than the et minutes minimum
+    //minutes were greater than the set minutes minimum
 }
 
 function countMood(log, moodType) { //Takes in the log and a user's set mood type
@@ -33,3 +34,7 @@ console.log("Total time spent:", totalTime(hobbyLog), "minutes");
 console.log("Unique hobbies:", uniqueHobbies(hobbyLog));
 console.log("Sessions longer than 30 min:", longSessions(hobbyLog, 30));
 console.log("Number of relaxed sessions:", countMood(hobbyLog, "relaxed"));
+
+//new Test
+console.log("Number of happy sessions:", countMood(hobbyLog, "happy"));
+//I tested with a mod name that was not in the dataset as an experiment, to see what would be returned
