@@ -17,6 +17,9 @@ function uniqueHobbies(log) { //Function for listing each unique hobby (with no 
     return [...new Set(names)]; //Set function removes duplicates before storing final result
 }
 
+/* SUGGESTION: I might rename the variable "minMinutes" to something like minTIME, just to avoid any
+ confusion between "minutes" and "minMinutes"*/
+
 function longSessions(log, minMinutes) { //Takes in the log and a value for your set "minMinutes" to measure against
     return log.filter(entry => entry.minutes > minMinutes); //filters the minutes data and returns any session where the  user's
     //minutes were greater than the et minutes minimum
